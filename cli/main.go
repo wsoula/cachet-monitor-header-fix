@@ -13,7 +13,7 @@ import (
 	"os/signal"
 	"sync"
 
-	cachet "github.com/castawaylabs/cachet-monitor"
+	cachet "github.com/wsoula/cachet-monitor-header-fix"
 )
 
 var configPath string
