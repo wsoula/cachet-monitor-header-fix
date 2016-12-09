@@ -1,10 +1,10 @@
 {
   "api_url": "http://status.dev.drillinginfo.com/api/v1",
-  "api_token": "oKwE8l9bAwchZigFirFg",
+  "api_token": "@API_KEY@",
   "insecure_api": false,
   "monitors": [{
     "name": "Production Workspace App",
-    "url": "http://app-a-in.dev.drillinginfo.com/production/",
+    "url": "http://@BASE_URL@.drillinginfo.com/production/",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -16,7 +16,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "DCA",
-    "url": "http://app-a-in.dev.drillinginfo.com/dca/api-docs",
+    "url": "http://@BASE_URL@.drillinginfo.com/dca/api-docs",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -28,7 +28,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "/courthouse/verification",
-    "url": "http://app-a-in.dev.drillinginfo.com/courthouse/verification/token",
+    "url": "http://@BASE_URL@.drillinginfo.com/courthouse/verification/token",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -40,7 +40,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "/related-filings-public",
-    "url": "http://app-a-in.dev.drillinginfo.com/related-filings/public/images/DI_Logo_Small.png",
+    "url": "http://@BASE_URL@.drillinginfo.com/related-filings/public/images/DI_Logo_Small.png",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -52,7 +52,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "/exports-service",
-    "url": "http://app-a-in.dev.drillinginfo.com/exports-service/admin/healthchecks",
+    "url": "http://@BASE_URL@.drillinginfo.com/exports-service/admin/healthchecks",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -64,7 +64,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "/assets (runsheet-service)",
-    "url": "http://app-a-in.dev.drillinginfo.com/assets/bulkusers.csv",
+    "url": "http://@BASE_URL@.drillinginfo.com/assets/bulkusers.csv",
     "method": "get",
     "strict_tls": false,
     "interval": 60,

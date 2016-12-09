@@ -3,5 +3,6 @@ version: "2"
 services:
   cachet-monitor:
     build: .
+    command: /go/cachet-monitor.config.dev.json
     environment:
       - FOO=barton
