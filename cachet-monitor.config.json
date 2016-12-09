@@ -3,19 +3,79 @@
   "api_token": "oKwE8l9bAwchZigFirFg",
   "insecure_api": false,
   "monitors": [{
-    "name": "Production Workspace",
+    "name": "Production Workspace App",
     "url": "http://app-a-in.dev.drillinginfo.com/production/",
     "method": "get",
     "strict_tls": false,
-    "interval": 5,
+    "interval": 60,
     "timeout": 5,
     "component_id": 2,
-    "threshold": 50,
+    "threshold": 25,
     "expected_status_code": 200,
     "headers": [
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
-    ]
-  }],
+    ]},{
+    "name": "DCA",
+    "url": "http://app-a-in.dev.drillinginfo.com/dca/api-docs",
+    "method": "get",
+    "strict_tls": false,
+    "interval": 60,
+    "timeout": 5,
+    "component_id": 2,
+    "threshold": 25,
+    "expected_status_code": 200,
+    "headers": [
+      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
+    ]},{
+    "name": "/courthouse/verification",
+    "url": "http://app-a-in.dev.drillinginfo.com/courthouse/verification/token",
+    "method": "get",
+    "strict_tls": false,
+    "interval": 60,
+    "timeout": 5,
+    "component_id": 4,
+    "threshold": 25,
+    "expected_status_code": 200,
+    "headers": [
+      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
+    ]},{
+    "name": "/related-filings-public",
+    "url": "http://app-a-in.dev.drillinginfo.com/related-filings/public/images/DI_Logo_Small.png",
+    "method": "get",
+    "strict_tls": false,
+    "interval": 60,
+    "timeout": 5,
+    "component_id": 2,
+    "threshold": 25,
+    "expected_status_code": 200,
+    "headers": [
+      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
+    ]},{
+    "name": "/exports-service",
+    "url": "http://app-a-in.dev.drillinginfo.com/exports-service/admin/healthchecks",
+    "method": "get",
+    "strict_tls": false,
+    "interval": 60,
+    "timeout": 5,
+    "component_id": 2,
+    "threshold": 25,
+    "expected_status_code": 200,
+    "headers": [
+      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
+    ]},{
+    "name": "/assets (runsheet-service)",
+    "url": "http://app-a-in.dev.drillinginfo.com/assets/bulkusers.csv",
+    "method": "get",
+    "strict_tls": false,
+    "interval": 60,
+    "timeout": 5,
+    "component_id": 4,
+    "threshold": 25,
+    "expected_status_code": 200,
+    "headers": [
+      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
+    ]}
+  ],
   "system_name": "AutoBot",
   "log_path": ""
 }
