@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  cachet-monitor:
+    build: .
+    environment:
+      - FOO=barton
