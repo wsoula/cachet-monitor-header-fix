@@ -1,3 +1,7 @@
+How to build
+---
+`docker-compose build && docker-compose up`
+
 How We Got Here
 ---
 * There is a PR that adds header support and we need this
@@ -8,3 +12,5 @@ How We Got Here
 appropriate environmental config and creates a new file for each environment
 * Made the Entrypoint the call to the main.go file, that way the command can
 be the config file to use
+* Checks were copy and pasted from uptime.drillintelligent.com into checks.md
+* checks.md is divided into several sections on what checks were added where

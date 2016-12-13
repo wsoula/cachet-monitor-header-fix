@@ -28,7 +28,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "Activity Maps App",
-    "url": "http://@BASE_URL@.com/geology/",
+    "url": "http://app.@BASE_URL@.com/geology/",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -134,7 +134,7 @@
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
     "name": "/v1/direct-access/rigs",
-    "url": "http://di-api.@BASE_URL@.com/v1/direct-access/rigs?pagesize=1",
+    "url": "https://di-api.@BASE_URL@.com/v1/direct-access/rigs?pagesize=1",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
@@ -145,19 +145,6 @@
     "headers": [
       { "header": "Authorization", "value": "oamusername rsdibasic" },
       { "header": "X-API-KEY", "value": "2697829ad5da5d0bc6d8cbb57f58ea8f" }
-    ]},{
-    "name": "Editorial Report",
-    "url": "http://app-a-in.@BASE_URL@.com/editorial/report?layer=di-intl-country-articles-scout&CQL_FILTER=(BBOX(prjgeom%2C-15253161.86624%2C-623015.200594%2C15018347.315381%2C10139318.380461)) AND (country %3D 'Spain')
-    "method": "get",
-    "strict_tls": false,
-    "interval": 60,
-    "timeout": 5,
-    "component_id": 3,
-    "threshold": 25,
-    "expected_status_code": 200,
-    "headers": [
-      { "header": "OAM_REMOTE_USER", "value": "pbrignalldiia" },
-      { "header": "OAM_GROUPS", "value": "11804"}
     ]},{
     "name": "Completions",
     "url": "http://app-a-in.@BASE_URL@.com/completions/?apiNumber=4232935913",
@@ -342,32 +329,8 @@
     "headers": [
       { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
     ]},{
-    "name": "Filters",
-    "url": "http://app-a-in.@BASE_URL@.com/filters/383",
-    "method": "get",
-    "strict_tls": false,
-    "interval": 60,
-    "timeout": 5,
-    "component_id": 2,
-    "threshold": 25,
-    "expected_status_code": 200,
-    "headers": [
-      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
-    ]},{
     "name": "UI Components",
     "url": "http://app-a-in.@BASE_URL@.com/uicomponents",
-    "method": "get",
-    "strict_tls": false,
-    "interval": 60,
-    "timeout": 5,
-    "component_id": 2,
-    "threshold": 25,
-    "expected_status_code": 200,
-    "headers": [
-      { "header": "OAM_REMOTE_USER", "value": "rsdibasic" }
-    ]},{
-    "name": "Search",
-    "url": "http://app-a-in.@BASE_URL@.com/search/pdenheaders/_search",
     "method": "get",
     "strict_tls": false,
     "interval": 60,
